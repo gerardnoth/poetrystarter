@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "poetrystarter"
+version = "0.1.0"
+description = "An example package that uses Poetry"
+authors = ["Gerard <gerardnoth@gmail.com>"]
+maintainers = ["Gerard <gerardnoth@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "poetrystarter", from = "src" }]
+license = "MIT"
+repository = "https://github.com/gerardnoth/poetrystarter"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+loguru = "0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.11.2"
+pytest = "8.3.2"
+pytest-httpserver = "1.1.0"
+ruff = "0.6.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = [
+    "--doctest-modules",
+    "--import-mode=importlib",
+]
+
+[tool.mypy]
+# mypy global options: https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+
+[tool.ruff.format]
+quote-style = "single"
+docstring-code-format = true
