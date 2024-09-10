@@ -61,7 +61,7 @@ Dependency Management
 ---------------------
 
 Dependencies can be added or removed by using Poetry. See [_Specifying dependencies_
-](https://python-poetry.org/docs/basic-usage/#specifying-dependencies) and [_Installing dependencies_](https://python-poetry.org/docs/basic-usage/#installing-dependencies). 
+](https://python-poetry.org/docs/basic-usage/#specifying-dependencies) and [_Installing dependencies_](https://python-poetry.org/docs/basic-usage/#installing-dependencies).
 
 The following example uses the [loguru](https://github.com/Delgan/loguru) package to demonstrate how to use Poetry.
 
@@ -109,7 +109,7 @@ make check
 
 ### Formatting and Linting
 
-[Ruff](https://docs.astral.sh/ruff/) is used for formatting and linting source code. Ruff can be configured by modifying the `[tool.ruff]` sections in [.pyproject.toml](.pyproject.toml). See [_Configuring Ruff_](https://docs.astral.sh/ruff/configuration/).
+[Ruff](https://docs.astral.sh/ruff/) is used for formatting and linting source code. Ruff can be configured by modifying the `[tool.ruff]` sections in [pyproject.toml](pyproject.toml). See [_Configuring Ruff_](https://docs.astral.sh/ruff/configuration/).
 
 Format code:
 
