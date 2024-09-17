@@ -7,7 +7,7 @@ from poetrystarter.types import PathLike
 
 
 def yield_lines(path: PathLike) -> Iterable[str]:
-    """Yield line bytes from a file.
+    """Yield lines as strings from a file.
 
     :param path: A path to a file.
     :return: An iterable of lines.
